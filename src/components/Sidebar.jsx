@@ -6,6 +6,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 
 const Sidebar = () => {
     const activeMenu = true;
+    const menu = "Menu";
     return (
         <div className='ml-3 h-screen md:overflow-hidden overflow-auto md:hover:overflow-auto pb-10'>
            {
@@ -16,6 +17,9 @@ const Sidebar = () => {
                         text-xl font-extrabold tracking-tight dark:text-white text-slate-900">
                             <SiShopware/><span>Shoppy</span>
                         </Link>
+                        <TooltipComponent content={menu} position='BottomCenter'>
+                            <button><MdOutlineCancel/></button>
+                        </TooltipComponent>
                     </div>
                 </>
             )
