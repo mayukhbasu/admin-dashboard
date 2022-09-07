@@ -7,8 +7,10 @@ import { Ecommerce, Orders, Calendar, Employees, Stacked, Pyramid, Customers, Ka
 Bar, Pie, Financial, ColorPicker, ColorMapping, Editor } from "./pages";
 import './App.css';
 import Calender from "./pages/Calendar";
+import { useStateContext } from "./contexts/ContextProvider";
+
 function App() {
-  const activeMenu = true;
+  const {activeMenu} = useStateContext();
   return (
     <div>
       <BrowserRouter>
